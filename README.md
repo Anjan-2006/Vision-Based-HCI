@@ -83,29 +83,22 @@ This project solves those issues by providing a **high‑performance, visually s
 
 ```mermaid
 flowchart TD
-    A[Webcam Frame] --> B[HandTracker (MediaPipe)]
+    A[Webcam Frame] --> B[HandTracker]
     B --> C[GestureDetector]
     C --> D[SystemController]
-    D --> E[Virtual Cursor / Clicks]
-    D --> F[Canvas (drawing)]
-    D --> G[Volume / Brightness Handlers]
-    D --> H[Dashboard Interaction]
-    H --> I[UI Rendering (glass‑morphism panels)]
+
+    D --> E[Virtual Cursor]
+    D --> F[Drawing Canvas]
+    D --> G[Volume and Brightness]
+    D --> H[Dashboard UI]
+
+    H --> I[UI Rendering]
     F --> J[Neon Glow Effect]
-    I --> K[Final Frame Output]
-    K --> L[cv2.imshow Window]
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style B fill:#bbf,stroke:#333,stroke-width:2px
-    style C fill:#bfb,stroke:#333,stroke-width:2px
-    style D fill:#ff9,stroke:#333,stroke-width:2px
-    style E fill:#9ff,stroke:#333,stroke-width:2px
-    style F fill:#f99,stroke:#333,stroke-width:2px
-    style G fill:#9f9,stroke:#333,stroke-width:2px
-    style H fill:#ff9,stroke:#333,stroke-width:2px
-    style I fill:#9ff,stroke:#333,stroke-width:2px
-    style J fill:#f99,stroke:#333,stroke-width:2px
-    style K fill:#9f9,stroke:#333,stroke-width:2px
-    style L fill:#bbf,stroke:#333,stroke-width:2px
+
+    I --> K[Final Output]
+    J --> K
+
+    K --> L[Display Window]
 ```
 
 **Key data flow**:
