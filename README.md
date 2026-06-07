@@ -1,4 +1,4 @@
-# 📦 **Gesture‑Controlled Drawing Dashboard**
+# **Gesture‑Controlled Drawing Dashboard**
 *Neon‑glow, glass‑morphism UI for touch‑less hand‑gesture interaction*
 
 <div align="center">
@@ -11,7 +11,7 @@
 
 ---
 
-## 👀 Project Overview
+## Project Overview
 
 This repository implements a **real‑time, camera‑based human‑computer interaction (HCI) system** that lets users control the mouse, adjust media volume/brightness, and draw on a virtual canvas **solely with hand gestures**. The UI is built with **glass‑morphism panels**, **neon glow effects**, and a **floating drawing dashboard** that mimics premium cyber‑punk aesthetics.
 
@@ -37,7 +37,7 @@ This project solves those issues by providing a **high‑performance, visually s
 
 ---
 
-## 🛠️ Solution
+## Solution
 
 - **MediaPipe Hand Tracking** (via `hand_tracker.py`) gives fast, robust 21‑point landmarks.
 - **EMA‑based filters** smooth both cursor motion and drawing strokes while preserving responsiveness.
@@ -48,7 +48,7 @@ This project solves those issues by providing a **high‑performance, visually s
 
 ---
 
-## ✨ Features
+## Features
 
 | Feature | Description |
 |---------|-------------|
@@ -65,7 +65,7 @@ This project solves those issues by providing a **high‑performance, visually s
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Layer | Technology | Reason |
 |-------|------------|--------|
@@ -79,7 +79,7 @@ This project solves those issues by providing a **high‑performance, visually s
 
 ---
 
-## 🏗️ System Architecture / Workflow
+## System Architecture / Workflow
 
 ```mermaid
 flowchart TD
@@ -110,7 +110,7 @@ flowchart TD
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 
 ```
 [PROJECT_ROOT]/
@@ -128,7 +128,7 @@ flowchart TD
 
 ---
 
-## ⚙️ Installation Guide
+## Installation Guide
 
 1. **Clone the repository**
    ```bash
@@ -156,7 +156,7 @@ flowchart TD
 
 ---
 
-## 🔧 Environment Variables (optional)
+## Environment Variables (optional)
 
 The project does not require custom environment variables, but you may define the following for debugging or custom paths:
 
@@ -169,7 +169,7 @@ LOG_LEVEL=INFO
 
 ---
 
-## 🎮 Usage & Controls
+## Usage & Controls
 
 | Mode | Gesture | Action |
 |------|---------|--------|
@@ -191,7 +191,7 @@ LOG_LEVEL=INFO
 
 ---
 
-## 📸 Screenshots (place images in `assets/screenshots/`)
+## Screenshots (place images in `assets/screenshots/`)
 
 | Description | Screenshot |
 |-------------|------------|
@@ -204,7 +204,7 @@ LOG_LEVEL=INFO
 
 ---
 
-## 🎬 Demo
+## Demo
 
 - **Live Demo** (hosted on Streamlit or a simple Flask server): https://yourdemo.example.com
 - **Video Walkthrough**: https://youtu.be/your‑demo‑video
@@ -212,7 +212,7 @@ LOG_LEVEL=INFO
 
 ---
 
-## 🏋️ Challenges Faced
+## Challenges Faced
 
 - **Latency vs. Smoothing** – Balancing EMA filter parameters to achieve fluid cursor motion without jitter.
 - **Cross‑platform volume/brightness control** – Implemented separate utilities for Linux (PulseAudio, `xrandr`) and macOS (`osascript`).
@@ -221,7 +221,7 @@ LOG_LEVEL=INFO
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 - **Web‑based front‑end** (e.g., using WebGL) for remote access.
 - **GraphQL/REST API** to expose canvas state for collaborative drawing.
@@ -231,7 +231,7 @@ LOG_LEVEL=INFO
 
 ---
 
-## 📚 Learning Outcomes
+## Learning Outcomes
 
 - Mastered real‑time hand‑tracking with **MediaPipe**.
 - Implemented **predictive smoothing** and **dynamic EMA** for cursor control.
@@ -241,7 +241,7 @@ LOG_LEVEL=INFO
 
 ---
 
-## ⚡ Performance & Optimization
+## Performance & Optimization
 
 - **Frame‑rate**: ~30 FPS on a mid‑range laptop (Intel i5, integrated GPU).
 - **GPU‑offload**: OpenCV uses SIMD instructions; consider OpenCL for further gains.
@@ -253,7 +253,7 @@ LOG_LEVEL=INFO
 
 ---
 
-## 🔒 Security Features
+## Security Features
 
 - **No network exposure** – All processing stays local.
 - **Sandboxed UI** – No external scripts are executed from the webcam feed.
@@ -261,7 +261,7 @@ LOG_LEVEL=INFO
 
 ---
 
-## 🚢 Deployment
+## Deployment
 
 1. **Local deployment** – just run `python main.py` after installing dependencies.
 2. **Docker** (optional) – a `Dockerfile` can be added to containerise the environment:
@@ -276,7 +276,7 @@ LOG_LEVEL=INFO
 
 ---
 
-## 🤝 Contributing Guide
+## Contributing Guide
 
 1. **Fork the repository**.
 2. **Create a feature branch**:
@@ -290,13 +290,13 @@ LOG_LEVEL=INFO
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License** – see the `LICENSE` file for details.
 
 ---
 
-## 👤 Author
+## Author
 
 **[Your Name]** – Computer Vision & Interaction Engineer
 
