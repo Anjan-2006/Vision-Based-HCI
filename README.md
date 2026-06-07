@@ -21,7 +21,7 @@ The core ideas are:
 - **Dynamic visual feedback** (glow, vignette, pulsating pills) that works on any modern laptop webcam.
 - **Modular architecture** separating hand tracking, gesture detection, system control, and UI rendering.
 
-The system runs on **Linux, macOS and Windows** and can be extended to other platforms.
+The system runs on **Ubuntu (Linux) and macOS** and can be extended to other platforms.
 
 ---
 
@@ -44,7 +44,7 @@ This project solves those issues by providing a **high‑performance, visually s
 - **Glass‑morphism UI** (`drawing_dashboard.py`) renders a floating toolbar with colour palette, thickness & glow sliders, and action buttons (Undo, Clear, Save).
 - **Neon glow & vignette shaders** (`apply_neon_glow`, `apply_vignette`) add premium visual flair.
 - **Multi‑mode architecture** (`MOUSE`, `MEDIA`, `DRAWING`, `BRIGHTNESS`) enables context‑aware gestures.
-- **Cross‑platform support** with platform‑specific utilities (`platform_utils.py`).
+- **Cross‑platform support** is provided for **Ubuntu (Linux) and macOS** via `platform_utils.py`.
 
 ---
 
@@ -121,20 +121,15 @@ flowchart TD
 
 ```
 [PROJECT_ROOT]/
-├─ .github/                # CI workflows (optional)
-├─ assets/                 # Screenshots, icons (add your own)
-│   └─ screenshots/        # Demo images for README
-├─ lib/                    # Third‑party helper modules (if any)
-├─ __pycache__/            # Python byte‑code cache (auto‑generated)
 ├─ drawing_dashboard.py   # UI panel implementation & effects
 ├─ controller.py          # SystemController (cursor, drawing, volume, etc.)
 ├─ hand_tracker.py        # MediaPipe hand detection wrapper
 ├─ gesture_detector.py    # Gesture classification logic
 ├─ main.py                # Application entry‑point
-├─ platform_utils.py      # OS‑specific brightness & volume helpers
+├─ platform_utils.py      # OS‑specific brightness & volume helpers (Ubuntu & macOS)
 ├─ utils.py               # Common helpers (EMAFilter, UIMessageManager, ...)
 ├─ requirements.txt       # Python dependencies
-├─ README.md              # ← This file (generated)
+├─ README.md              # ← This file
 └─ .gitignore
 ```
 
