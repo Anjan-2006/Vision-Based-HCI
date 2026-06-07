@@ -75,7 +75,7 @@ This project solves those issues by providing a **high‑performance, visually s
 | **System Automation** | PyAutoGUI | Cross‑platform mouse/keyboard control. |
 | **UI Rendering** | OpenCV drawing primitives (custom glass‑morphism helpers). |
 | **Packaging** | `requirements.txt` (opencv‑python, mediapipe, pyautogui, numpy) | Simple `pip install -r` workflow. |
-| **Operating System** | Linux / macOS / Windows | Platform‑agnostic code with a thin `platform_utils` abstraction. |
+| **Operating System** | Ubuntu (Linux) / macOS | Platform‑agnostic code with a thin `platform_utils` abstraction. |
 
 ---
 
