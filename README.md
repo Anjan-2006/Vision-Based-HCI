@@ -337,11 +337,3 @@ The cursor pipeline in `controller.py` uses several techniques to achieve smooth
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ---
-
-## Author
-
-**[Your Name]** -- Computer Vision and Interaction Engineer
-
-- GitHub: https://github.com/yourusername
-- LinkedIn: https://linkedin.com/in/yourprofile
-- Email: youremail@example.com
